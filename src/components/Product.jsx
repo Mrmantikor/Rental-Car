@@ -1,5 +1,3 @@
-// src/components/Product.jsx
-
 export default function Product({ name, imgUrl, price }) {
   return (
     <div>
