@@ -6,4 +6,14 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "./src/styles/variables.scss";
+          @import "./src/styles/reset.scss";
+        `,
+      },
+    },
+  },
 });
