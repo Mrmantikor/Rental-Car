@@ -7,15 +7,24 @@ export const Modal = () => {
   const [modalClose, setModalClose] = useState(0);
 
   return (
-    <div className={s["modal"]}>
+    <p>
       <Icon name="burger-menu" className={s["modal_burger-menu"]} />
-      <div>
-        <h1>Hello</h1>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some TEXT</p>
+            <p>Ещё другой текст...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Footer</h3>
+          </div>
+        </div>
       </div>
-    </div>
+    </p>
   );
 };
 
