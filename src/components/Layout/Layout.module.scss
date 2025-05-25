@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 30px;
+  background-color: $badges;
+
+  &__logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: center;
+    color: $main;
+    text-decoration: none;
+
+    &-span {
+      color: $button;
+    }
+  }
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 20px;
+
+  &__link {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: $main;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $button-hover;
+    }
+  }
+
+  &__link--active {
+    font-weight: 600;
+    color: $button-hover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 26px 60px;
+  }
+  .nav {
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 26px 120px;
+  }
+  .nav {
+    gap: 32px;
+  }
+}

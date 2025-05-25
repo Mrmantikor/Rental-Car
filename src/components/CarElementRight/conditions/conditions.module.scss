@@ -1,0 +1,38 @@
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 6.875rem;
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: $main;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: $main;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $main;
+  }
+}

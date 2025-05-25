@@ -1,7 +1,12 @@
-import s from "./Catalog.module.scss";
-
+import CarsList from "../../components/CarsList/CarsList.jsx";
+import FilterCars from "../../components/FilterCars/FilterCars.jsx";
 const Catalog = () => {
-  return <div>Catalog</div>;
+  return (
+    <div>
+      <FilterCars />
+      <CarsList />
+    </div>
+  );
 };
 
 export default Catalog;
